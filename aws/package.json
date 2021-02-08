@@ -5,10 +5,11 @@
     "aws": "bin/aws.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npm --prefix ./lambda install ./lambda --force",
+    "deploy":"cdk bootstrap -y && cdk synth && cdk deploy",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "mkdir -p ./lambda/node_modules && npm install --prefix ./lambda uuid && npm install --prefix ./lambda aws-sdk && npm install --prefix ./lambda lodash && cdk synth && cdk deploy"
+    "cdk": "cdk bootstrap && npm --prefix ./lambda install ./lambda && cdk synth && cdk deploy"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.46.0",

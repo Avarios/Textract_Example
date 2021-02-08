@@ -76,7 +76,7 @@ Atfer you installed all frameworks and tools move on to setup and deploy the app
 1. Open your terminal and go to the cloned source folder
 2. Change to the folder `aws`
 3. Type in `npm install` and press `Enter`
-4. Now type in `npm run cdk`. You should see the whole cloudformation template in the terminal.
+4. Now type in `npm run build` and after this run `npm run deploy`. You should see the whole cloudformation template in the terminal.
 5. If prompted, press `Y`for deploying the stack. After the script is finished your AWS resources are deployed.
 Copy and Paste the URL that is in the Stack output in the Terminal
 
