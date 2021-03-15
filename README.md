@@ -13,6 +13,8 @@ In this example following services where used:
 - [Amazon S3](https://aws.amazon.com/s3/?nc2=h_ql_prod_st_s3)
 - [AWS CDK](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html)
 
+![Architecture](https://github.com/Ahrimaan/Textract_Example/blob/latest_branch/textract_example.jpg?raw=true)
+
 You can find the whole aws backend stack build with [AWS-CDK](https://aws.amazon.com/de/cdk/) in `./aws/lib`
 
 ## Caveats:
